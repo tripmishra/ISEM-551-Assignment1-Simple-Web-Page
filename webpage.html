@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="mystyle1.css">
+    <script type="text/javascript" src="jquery-1.11.1.js"></script>
+	<script type="text/javascript" src="validation.js"></script>
+
+    <script type="text/javascript">
+
+		$(document).ready(function(){
+
+		$('#myform').submit(validate);
+		});	
+		
+    </script>
+
+
+<title>Student Registration Form</title>
+
+</head>
+<body>
+<div id="content">
+	<img src="Students_Registration.jpg" style="width:697px;height:300px;">
+	<h2 class="heading_details">2015 Summer Courses Registration</h2>
+		
+	<div class="form-style">
+	<div class="form-style-heading">Student Information</div>
+	
+	<form id="myform" action="" method="post">	
+	<label for="field1"><span>First Name <span class="required">*</span></span><input type="text" id="firstname" class="input-field" name="field1" value="" /></label>
+	<label for="field1"><span>Last Name <span class="required">*</span></span><input type="text" id="lastname" class="input-field" name="field1" value="" /></label>
+	<label for="field2"><span>Email Address <span class="required">*</span></span><input type="text" id="emailaddress" class="input-field" name="field2" value="" /></label>
+	<label for="field2"><span>Date of Birth<span class="required">*</span></span><input type="text" id="dob" class="input-field" name="field2" value="" /></label>
+	<label for="field2"><span>Country Of Citizenship <span class="required">*</span></span><input type="text" id="coc" class="input-field" name="field2" value="" /></label>
+	<label for="field2"><span>Street Address </span><input type="text" class="input-field" name="field2" value="" /></label>
+	<label for="field2"><span>City </span><input type="text" class="input-field" name="field2" value="" /></label>
+	<label for="field2"><span>State </span><input type="text" class="input-field" name="field2" value="" /></label>
+	<label for="field2"><span>Zip Code </span><input type="text" class="input-field" name="field2" value="" />
+	<!-- <span class="warning">required</span> -->
+	</label>
+	
+	<label for="field2"><span>Phone No.<span class="required">*</span></span><input type="text" id="phoneno" class="input-field" name="field2" value="" /></label>
+		
+	<br>
+	<br>
+	<div class="form-style-heading">First Course Selection.Please fill out your FIRST course selection.</div>
+	
+	<label for="field2"><span>Department</span><input type="text" class="input-field" name="field2" value="" /></label>
+	<label for="field2"><span>Course<span class="required">*</span></span><input type="text" id="course1" class="input-field" name="field2" value="" /></label>
+	<label for="field2"><span>Instructor</span><input type="text" class="input-field" name="field2" value="" /></label>
+
+	<br>
+	<br>
+	<div class="form-style-heading">Second Course Selection.Please fill out your SECOND course selection.</div>
+	
+	<label for="field2"><span>Department</span><input type="text" class="input-field" name="field2" value="" /></label>
+	<label for="field2"><span>Course<span class="required">*</span></span><input type="text" id="course2" class="input-field" name="field2" value="" /></label>
+	<label for="field2"><span>Instructor</span><input type="text" class="input-field" name="field2" value="" /></label>
+	
+	<label><span>&nbsp;</span><input type="submit" value="Submit" />&nbsp;<span>&nbsp;</span><input type="reset" value="Reset" /></label>
+	
+	
+	</form>
+	</div>
+
+</body>
+</html>

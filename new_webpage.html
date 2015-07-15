@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="bootstrap\css\bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="bootstrap\css\bootstrap.css">
+
+<script type="text/javascript" src="jquery-1.11.1.js"></script>
+
+<script type="text/javascript" src="bootstrap\js\bootstrap.js"></script>
+<script type="text/javascript" src="bootstrap\js\bootstrap.min.js"></script>
+
+<script type="text/javascript" src="bootstrap\js\angular\angular.js"></script>
+
+<title>Student Registration Form</title>
+
+<style>
+body {
+    background-color: ;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <div class="item">
+      <img src="IMG_2.JPG" class="img-responsive center-block" height="700" width="700">
+    </div>
+
+</div>
+
+<br>
+<br>
+
+
+<div class="col-md-offset-3">
+    <ul class="nav nav-pills">
+        <li class="active"><a data-toggle="tab" href="#sectionA">Registration Form</a></li>
+        <li><a data-toggle="tab" href="#sectionB">About US</a></li>
+    </ul>
+    <br>
+    	<div class="tab-content">
+        <div id="sectionA" class="tab-pane fade in active" ng-app="myApp" ng-controller="formCtrl">
+
+					<form novalidate class="form-horizontal" >
+
+					  <div class="form-group">
+					    <div class="col-sm-6">
+					      <input type="text" class="form-control" id="firstname" placeholder="First Name" ng-model="user.firstName">
+					    </div>
+					  </div>
+
+					  <div class="form-group">
+					    <div class="col-sm-6">
+					      <input type="text" class="form-control" id="lastname" placeholder="Last Name" ng-model="user.lastName">
+					    </div>
+					  </div>
+
+					  <div class="form-group">
+					    <div class="col-sm-6">
+					      <input type="email" class="form-control" id="emailid" placeholder="Email Address" ng-model="user.emailaddress">
+					    </div>
+					  </div>
+
+					  <div class="form-group">
+					    <div class="col-sm-6">
+					      <input type="text" class="form-control" id="dob" placeholder="Date of Birth" ng-model="user.dateofbirth">
+					    </div>
+					  </div>
+
+					  <div class="form-group">
+					    <div class="col-sm-6">
+					      <input type="text" class="form-control" id="coc" placeholder="Country of Citizenship" ng-model="user.countrycitizenship">
+					    </div>
+					  </div>
+
+					  <div class="form-group"> 
+					    <div class="col-sm-6">
+					      
+					    <textarea class="form-control" rows="3" id="address" placeholder="Address" ng-model="user.address"></textarea>
+					    </div>
+					  </div>
+
+					  <div class="form-group">
+					    <div class="col-sm-6">
+					      <input type="text" class="form-control" id="city" placeholder="City" ng-model="user.city">
+					    </div>
+					  </div>
+
+					  <div class="form-group">
+					    <div class="col-sm-6">
+					      <input type="text" class="form-control" id="state" placeholder="State" ng-model="user.state">
+					    </div>
+					  </div>
+
+					  <div class="form-group">
+					    <div class="col-sm-6">
+					      <input type="text" class="form-control" id="zipcode" placeholder="Zip Code" ng-model="user.zipCode">
+					    </div>
+					  </div>
+
+					  <div class="form-group">
+					    <div class="col-sm-6">
+					      <input type="text" class="form-control" id="phoneno" placeholder="Phone No." ng-model="user.phone">
+					    </div>
+					  </div>
+
+					  <br>
+                  <b>First Course Selection.Please fill out your FIRST course selection.</b>
+					  <div class="form-group">
+					    <div class="col-sm-6">
+					      <input type="text" class="form-control" id="deptt" placeholder="Department" ng-model="user.deptartment">
+					    </div>
+					  </div>
+
+					  <div class="form-group">
+					    <div class="col-sm-6">
+					      <input type="text" class="form-control" id="course" placeholder="Course" ng-model="user.course">
+					    </div>
+					  </div>
+
+					  <div class="form-group">
+					    <div class="col-sm-6">
+					      <input type="text" class="form-control" id="instruct" placeholder="Instructor" ng-model="user.instructor">
+					    </div>
+					  </div>
+
+					  <br>
+                  		<b>Second Course Selection.Please fill out your SECOND course selection</b>
+
+					  <div class="form-group">
+					    <div class="col-sm-6">
+					      <input type="text" class="form-control" id="department2" placeholder="Department" ng-model="user.department2">
+					    </div>
+					  </div>
+
+					  <div class="form-group">
+					    <div class="col-sm-6">
+					      <input type="text" class="form-control" id="course2" placeholder="Course" ng-model="user.course2">
+					    </div>
+					  </div>
+
+					  <div class="form-group">
+					    <div class="col-sm-6">
+					      <input type="text" class="form-control" id="instruct2" placeholder="Instructor" ng-model="user.instructor2">
+					    </div>
+					  </div>
+
+						<button type="button" class="btn btn-primary">Submit</button>
+						<button type="reset" class="btn btn-primary">Reset</button>
+					  
+					</form>
+
+        </div>
+        
+        <div id="sectionB" class="tab-pane fade">            
+Online event registration software allows you to maximize efficiency through the use of technology, 
+while reducing costs at the same time. 
+<br>
+
+Harrisburg University supports you by providing degree programs that work with your life. 
+Our online degrees give you the power to study while keeping up with your work and family responsibilities or your military service obligations. 
+24/7 access to your virtual classroom means you can study where and when you want to.
+And our faculty and staff are ready to help. Whether it is a question to your professor about a reading, or assistance with your FAFSA from our financial aid staff, everyone at Harrisburg University is here for you.
+
+In addition to advanced course content and enhanced connection to the world of work, Harrisburg University goes the extra mile to ensure our students are making an affordable investment. Our highly-competitive tuition prices compare favorably with many other private colleges.
+We offer generous employer reimbursement packages. Additionally, financial aid is available to those who qualify, including military veterans and their family members.
+
+Learn how Harrisburg University has innovative, career-focused graduate programs can help you achieve your goals. Talk to an admissions counselor today!
+        </div>
+
+    </div>
+</div> 
+
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('formCtrl', function($scope) {
+
+});
+</script>
+
+</body>
+</html>
